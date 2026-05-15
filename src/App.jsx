@@ -1,31 +1,14 @@
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
-import FloatingWhatsApp from './components/ui/FloatingWhatsApp';
-import HomePage from './pages/HomePage';
-import ServicesPage from './pages/ServicesPage';
-import AppointmentPage from './pages/AppointmentPage';
-import ContactPage from './pages/ContactPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-white flex flex-col">
-        <Navbar />
-        <main className="flex-1">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/appointment" element={<AppointmentPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Routes>
-        </main>
-        <Footer />
-        <FloatingWhatsApp />
+      <div>
+        <h1>Paws & Care Clinic</h1>
+        <p>Coming Soon...</p>
       </div>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
